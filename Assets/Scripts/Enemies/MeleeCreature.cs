@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class MeleeCreature : Creature
 {
-    public GameObject fx;
-
     protected override void CollideWithObjective(Vector3 collisionPoint)
     {
+        if (!GameManager.Instance.GameIsPlaying)
+            return;
+
         if (isFlying)
             return;
 
-        if (fx != null)
-        {
-            Instantiate(fx, collisionPoint, Quaternion.identity, null);
-        }
+
+        Cheese.Instance.DamageCheese(collisionPoint);
+
         Disable();
     }
 
     void Update()
     {
+        if (!GameManager.Instance.GameIsPlaying)
+            return;
+
         if (isHit && !isFlying)
             body.velocity = Vector3.zero;
         else

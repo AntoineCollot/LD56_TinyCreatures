@@ -95,6 +95,6 @@ public class ScoreSystem : MonoBehaviour
     {
         comboBy.Remove(creature);
         hitBy.Remove(creature);
-        onComboClear.Invoke(creature);
+        onComboClear?.Invoke(creature);
     }
 }

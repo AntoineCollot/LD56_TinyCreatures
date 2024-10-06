@@ -13,13 +13,23 @@ public class HandFlick : MonoBehaviour
     public float flickCooldown = 0.3f;
     public float flickFreezeTime = 0.3f;
     public bool IsFlicking => Time.time < lastFlickTime + flickCooldown;
-    public bool IsFlickingFreeze => Time.time < lastFlickTime + flickFreezeTime;
+    public bool IsFlickingFreeze => Time.time < lastFlickTime + flickFreezeTime || isHurt;
+
+    [Header("Hurt")]
+    bool isHurt;
+    const float HURT_DURATION = 0.5f;
 
     [Header("Collisions")]
     public float flickRadius = 0.7f;
     public LayerMask layerMask;
 
+    public static HandFlick Instance;
     public static Vector3 flickDirection { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -51,11 +61,38 @@ public class HandFlick : MonoBehaviour
         lastFlickTime = Time.time;
 
         List<Creature> creatures = GetHitCreatures();
+        Creature closestCreature = null;
+        float minDist = Mathf.Infinity;
         foreach (Creature creature in creatures)
         {
-            creature.Hit(flickDirection);
-            ScoreSystem.Instance.RegisterComboStarter(creature);
+            float dist = Vector3.Distance(transform.position, creature.transform.position);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                closestCreature = creature;
+            }
         }
+        if (closestCreature != null)
+        {
+            if (closestCreature.CanBeHit())
+            {
+                closestCreature.Hit(flickDirection);
+                ScoreSystem.Instance.RegisterComboStarter(closestCreature);
+            }
+            //Hit by hedgehog
+            else
+            {
+                anim.SetBool("IsHurt", true);
+                isHurt = true;
+                Invoke("ClearHurt", HURT_DURATION);
+            }
+        }
+    }
+
+    void ClearHurt()
+    {
+        isHurt = false;
+        anim.SetBool("IsHurt", false);
     }
 
     List<Creature> GetHitCreatures()
@@ -64,7 +101,7 @@ public class HandFlick : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, flickRadius, layerMask);
         foreach (var col in colliders)
         {
-           if(col.TryGetComponent(out Creature creature))
+            if (col.TryGetComponent(out Creature creature))
                 creatures.Add(creature);
         }
         return creatures;

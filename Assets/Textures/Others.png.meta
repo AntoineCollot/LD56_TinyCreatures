@@ -126,12 +126,12 @@ TextureImporter:
       name: Arrow
       rect:
         serializedVersion: 2
-        x: 17
-        y: 450
-        width: 88
-        height: 41
+        x: 102
+        y: 451
+        width: 81
+        height: 31
       alignment: 9
-      pivot: {x: 0.14796858, y: 0.49999925}
+      pivot: {x: 0.12257894, y: 0.55571425}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,6 +139,48 @@ TextureImporter:
       bones: []
       spriteID: fb41dac3bdbb3e94e905cb9df644de00
       internalID: 539433777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circle
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 426
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fa33a77548b2a4998bc48f034e9245
+      internalID: -159500996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 429
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6ef6f42920f3b4fb9c3af4e4990dab
+      internalID: 1860842561
       vertices: []
       indices: 
       edges: []
@@ -155,6 +197,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Arrow: 539433777
+      Circle: -159500996
+      Star: 1860842561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

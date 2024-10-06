@@ -3,44 +3,68 @@
   "WorkspaceRootPath": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\enemies\\meleecreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\meleecreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\enemies\\creature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\creature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\game\\combotext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\combotext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|d:\\documents\\programmation\\unity\\ld56_tinycreatures\\assets\\scripts\\game\\combotextspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\combotextspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|d:\\documents\\programmation\\unity\\ld56_tinycreatures\\assets\\scripts\\enemies\\creaturemouth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\creaturemouth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\player\\handflick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\handflick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\enemies\\creature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\creature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|d:\\documents\\programmation\\unity\\ld56_tinycreatures\\assets\\scripts\\enemies\\hedgehogcreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\hedgehogcreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\enemies\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\player\\handmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\handmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\game\\gamedifficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\gamedifficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\game\\enemyspawndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\enemyspawndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\enemies\\meleecreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\meleecreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\game\\cheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\cheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\enemies\\mirrorposifflipped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\mirrorposifflipped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\player\\flipspritebyflickdir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\flipspritebyflickdir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\game\\combotext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\combotext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\game\\combotextspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\combotextspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\player\\handmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\handmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8F3B5A5-80C8-190C-CD5E-E5CDA4B178CC}|Assembly-CSharp.csproj|D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\assets\\scripts\\player\\lookatflickdir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +82,81 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "HedgehogCreature.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\HedgehogCreature.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\HedgehogCreature.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\HedgehogCreature.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\HedgehogCreature.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T16:21:55.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnemySpawnData.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\EnemySpawnData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\EnemySpawnData.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\EnemySpawnData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\EnemySpawnData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T14:53:43.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemySpawner.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemySpawner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T19:50:22.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cheese.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\Cheese.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Cheese.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\Cheese.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Cheese.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T14:29:40.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MirrorPosIfFlipped.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\MirrorPosIfFlipped.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\MirrorPosIfFlipped.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\MirrorPosIfFlipped.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\MirrorPosIfFlipped.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T13:07:52.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreatureMouth.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\CreatureMouth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\CreatureMouth.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\CreatureMouth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\CreatureMouth.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:25:38.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ComboTextSpawner.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\ComboTextSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\ComboTextSpawner.cs",
@@ -66,12 +164,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\ComboTextSpawner.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T00:49:38.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T00:49:38.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "ComboText.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\ComboText.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\ComboText.cs",
@@ -79,88 +176,85 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\ComboText.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T00:35:22.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T00:35:22.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Creature.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\Creature.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Creature.cs",
               "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\Creature.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Creature.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAowDQAAAAsAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAHoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T19:25:59.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemySpawner.cs",
-              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\EnemySpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemySpawner.cs",
-              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\EnemySpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemySpawner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T19:50:22.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ScoreSystem.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\ScoreSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreSystem.cs",
               "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\ScoreSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\ScoreSystem.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAADwvy0AAAAAAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAADgv2EAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T22:50:06.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T22:50:06.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "MeleeCreature.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\MeleeCreature.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\MeleeCreature.cs",
               "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Enemies\\MeleeCreature.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\MeleeCreature.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T22:26:21.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T22:26:21.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T22:14:06.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "HandFlick.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Player\\HandFlick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HandFlick.cs",
               "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Player\\HandFlick.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\HandFlick.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADgAAABAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T19:21:30.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
+              "Title": "GameDifficulty.cs",
+              "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\GameDifficulty.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameDifficulty.cs",
+              "ToolTip": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Game\\GameDifficulty.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\GameDifficulty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T15:13:44.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "FlipSpriteByFlickDir.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Player\\FlipSpriteByFlickDir.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\FlipSpriteByFlickDir.cs",
@@ -172,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "LookAtFlickDir.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Player\\LookAtFlickDir.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\LookAtFlickDir.cs",
@@ -184,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "HandMovement.cs",
               "DocumentMoniker": "D:\\Documents\\Programmation\\Unity\\LD56_TinyCreatures\\Assets\\Scripts\\Player\\HandMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HandMovement.cs",

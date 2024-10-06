@@ -227,6 +227,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Hands_Ouille0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae6200dfc76aba4fb6870218a9a34e1
+      internalID: -1334985219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hands_Ouille1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5376ea41b603374429935a048d1d6050
+      internalID: -1184159528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -243,8 +285,9 @@ TextureImporter:
       Hands_2: -1565900956
       Hands_3: -945038004
       Hands_4: 388538052
-      Hands_5: 498433821
       Hands_6: 721681083
+      Hands_Ouille0: 498433821
+      Hands_Ouille1: -1184159528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

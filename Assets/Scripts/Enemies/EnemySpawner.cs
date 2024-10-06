@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public List<Creature> availablePrefabs;
-    Queue<Creature> pool;
-    Queue<float> poolingTimes;
+    public List<EnemySpawnData> spawns;
+    Dictionary<EnemySpawnData.Type, Queue<Creature>> pools;
     float SpawnInterval => 1;
     List<Creature> hitCreatures;
     Camera cam;
@@ -19,9 +18,9 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        pool = new Queue<Creature>();
-        poolingTimes = new Queue<float>();
+        InitPools();
         hitCreatures = new();
+
         GameManager.Instance.onGameStart.AddListener(OnGameStart);
         if (GameManager.Instance.gameHasStarted)
             OnGameStart();
@@ -29,11 +28,26 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnGameStart()
     {
-        StartCoroutine(SpawnLoop());
+        SpawnEnemy(spawns[0]);
+    }
+
+    void InitPools()
+    {
+        pools = new();
+        foreach (EnemySpawnData data in spawns)
+        {
+            pools.Add(data.type, new Queue<Creature>());
+        }
     }
 
     private void Update()
     {
+        if (!GameManager.Instance.GameIsPlaying)
+            return;
+
+        LookToSpawnEnemies();
+
+        //Back to pool
         for (int i = hitCreatures.Count - 1; i >= 0; i--)
         {
             if (IsOutOfGameView(hitCreatures[i].transform.position))
@@ -44,39 +58,48 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnLoop()
+    void LookToSpawnEnemies()
+    {
+        foreach (EnemySpawnData data in spawns)
+        {
+            if (data.ShouldSpawn(GameManager.Instance.gameTime))
+            {
+                SpawnEnemy(data);
+            }
+        }
+    }
+
+    void SpawnEnemy(EnemySpawnData data)
     {
         Creature newCreature;
-        while (GameManager.Instance.GameIsPlaying)
+        Vector3 pos = GetRandomPositionAroundScreen();
+        if (pools[data.type].TryDequeue(out newCreature))
         {
-            yield return new WaitForSeconds(SpawnInterval);
-
-            Vector3 pos = GetRandomPositionAroundScreen();
-            if (poolingTimes.TryPeek(out float poolingTime) && Time.time >= poolingTime + MIN_POOLING_DURATION)
-            {
-                newCreature = pool.Dequeue();
-                newCreature.gameObject.SetActive(true);
-                poolingTimes.Dequeue();
-            }
-            else
-            {
-                newCreature = Instantiate(availablePrefabs[0], transform);
-                newCreature.gameObject.name = "Creature_"+ instantiateCount.ToString();
-                instantiateCount++;
-            }
-            newCreature.Init(this);
-            newCreature.transform.position = pos;
+            newCreature.gameObject.SetActive(true);
         }
+        else
+        {
+            newCreature = Instantiate(data.prefab, transform);
+            newCreature.gameObject.name = "Creature_" + instantiateCount.ToString();
+            instantiateCount++;
+        }
+        newCreature.Init(this);
+        newCreature.transform.position = pos;
     }
 
     public void AddToPool(Creature creature)
     {
         hitCreatures.Remove(creature);
-        poolingTimes.Enqueue(Time.time);
-        pool.Enqueue(creature);
+        StartCoroutine(AddBackToPoolWithDelay(creature, MIN_POOLING_DURATION));
     }
 
-    const float VIEWPORT_MARGINS = 0.1f;
+    IEnumerator AddBackToPoolWithDelay(Creature creature, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        pools[creature.type].Enqueue(creature);
+    }
+
+    const float VIEWPORT_MARGINS = 0.03f;
     Vector3 GetRandomPositionAroundScreen()
     {
         Vector3 posOnViewportEdges = new Vector3();
