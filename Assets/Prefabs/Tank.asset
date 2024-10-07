@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   prefab: {fileID: 3467571550417261332, guid: e8b1eea0253433f44acda2dca50c9dd4, type: 3}
-  startTime: 0
-  maxAmountTime: 80
-  minSpawnRate: 0.2
-  maxSpawnRate: 0.3
+  startTime: 15
+  maxAmountTime: 120
+  minSpawnRate: 0.1
+  maxSpawnRate: 0.35

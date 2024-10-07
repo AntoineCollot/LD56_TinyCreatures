@@ -14,11 +14,18 @@ public abstract class Creature : MonoBehaviour
     public float maxMoveSpeed = 2;
     public float MoveSpeed => maxMoveSpeed * GameDifficulty.MovementMultiplier;
 
-    protected bool isHit;
+    public bool isHit { get; private set; }
     protected bool isFlying;
     protected Vector2 hitDirection;
     public float projectionSpeed = 8;
     public float projectionRotation = 400;
+
+    protected HashSet<Creature> alreadyColliding = new();
+
+    [Header("FX")]
+    public GameObject smoke;
+    public ParticleSystem hitEffect;
+    public GameObject selectCircle;
 
     protected virtual void Awake()
     {
@@ -58,6 +65,9 @@ public abstract class Creature : MonoBehaviour
         anim.ResetTrigger("Hit");
         transform.rotation = Quaternion.identity;
         CancelInvoke();
+        smoke.gameObject.SetActive(true);
+        alreadyColliding.Clear();
+        selectCircle.SetActive(false);
 
         ScoreSystem.Instance.ClearCreatureCombo(this);
     }
@@ -76,6 +86,8 @@ public abstract class Creature : MonoBehaviour
         anim.SetTrigger("Hit");
         hitDirection = dir.normalized;
         ScoreSystem.Instance.AddHitPoints();
+        selectCircle.SetActive(false);
+        hitEffect.Play();
 
         Invoke("FlyDelayed", 0.1f);
     }
@@ -87,6 +99,23 @@ public abstract class Creature : MonoBehaviour
         isFlying = true;
         body.velocity = hitDirection * projectionSpeed;
         body.angularVelocity = projectionRotation;
+        //smoke.gameObject.SetActive(false);
+
+        //Process already collidings
+        foreach (Creature creature in alreadyColliding)
+        {
+            if (creature == null || creature.isHit || !creature.gameObject.activeSelf || !creature.CanBeHit())
+                continue;
+
+            Vector3 hitPos = (creature.transform.position + transform.position) * 0.5f;
+
+            //Register combo
+            ScoreSystem.Instance.RegisterCombo(this, creature, hitPos);
+
+            Vector3 hitDir = creature.transform.position - transform.position;
+            creature.Hit(hitDir.normalized);
+        }
+        alreadyColliding.Clear();
     }
 
     public virtual void Disable()
@@ -104,6 +133,14 @@ public abstract class Creature : MonoBehaviour
         body.velocity = dir * MoveSpeed;
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Creature") && other.TryGetComponent(out Creature creature))
+        {
+            alreadyColliding.Remove(creature);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Vector3 hitPos = (other.transform.position + transform.position) * 0.5f;
@@ -111,10 +148,15 @@ public abstract class Creature : MonoBehaviour
             CollideWithObjective(hitPos);
 
         string tag = other.tag;
-        if (isFlying && other.CompareTag("Creature"))
+        if (other.CompareTag("Creature"))
         {
             if (other.TryGetComponent(out Creature creature))
             {
+                alreadyColliding.Add(creature);
+
+                if (!isFlying)
+                    return;
+
                 if (creature.isHit)
                     return;
 
@@ -131,4 +173,14 @@ public abstract class Creature : MonoBehaviour
     }
 
     protected abstract void CollideWithObjective(Vector3 collisionPoint);
+
+    public void OnFlickHoverEnter()
+    {
+        selectCircle.SetActive(true);
+    }
+
+    public void OnFlickHoverExit()
+    {
+        selectCircle.SetActive(false);
+    }
 }

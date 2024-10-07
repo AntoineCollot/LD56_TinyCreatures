@@ -25,6 +25,10 @@ public class HandFlick : MonoBehaviour
 
     public static HandFlick Instance;
     public static Vector3 flickDirection { get; private set; }
+    public static Vector3 cursorPos { get; private set; }
+
+    //Hover
+    Creature hoveredCreature;
 
     private void Awake()
     {
@@ -41,15 +45,38 @@ public class HandFlick : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
     }
 
+    private void OnDestroy()
+    {
+        inputMap.Gameplay.Flick.performed -= Flick_performed;
+        inputMap.Dispose();
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.gameIsOver)
+            return;
         flickDirection = GetFlickDirection();
 
+        Creature closestCreature = GetClosestTarget();
+        if (closestCreature != hoveredCreature)
+        {
+            if (hoveredCreature != null)
+                hoveredCreature.OnFlickHoverExit();
+
+            hoveredCreature = closestCreature;
+            if (hoveredCreature != null)
+            {
+                hoveredCreature.OnFlickHoverEnter();
+            }
+        }
     }
 
     private void Flick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        if (GameManager.Instance.gameIsOver)
+            return;
+
         if (!IsFlicking)
             Flick();
     }
@@ -57,21 +84,11 @@ public class HandFlick : MonoBehaviour
     void Flick()
     {
         anim.SetTrigger("Flick");
+        SFXManager.PlaySound(GlobalSFX.Flick);
 
         lastFlickTime = Time.time;
 
-        List<Creature> creatures = GetHitCreatures();
-        Creature closestCreature = null;
-        float minDist = Mathf.Infinity;
-        foreach (Creature creature in creatures)
-        {
-            float dist = Vector3.Distance(transform.position, creature.transform.position);
-            if (dist < minDist)
-            {
-                minDist = dist;
-                closestCreature = creature;
-            }
-        }
+        Creature closestCreature = GetClosestTarget();
         if (closestCreature != null)
         {
             if (closestCreature.CanBeHit())
@@ -85,8 +102,29 @@ public class HandFlick : MonoBehaviour
                 anim.SetBool("IsHurt", true);
                 isHurt = true;
                 Invoke("ClearHurt", HURT_DURATION);
+                SFXManager.PlaySound(GlobalSFX.FlickHurt);
+                ScreenShakeSimple.Instance.Shake(0.6f);
             }
         }
+    }
+
+    Creature GetClosestTarget()
+    {
+        List<Creature> creatures = GetHitCreatures();
+        Creature closestCreature = null;
+        float minDist = Mathf.Infinity;
+        foreach (Creature creature in creatures)
+        {
+            if (creature.isHit)
+                continue;
+            float dist = Vector3.Distance(transform.position, creature.transform.position);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                closestCreature = creature;
+            }
+        }
+        return closestCreature;
     }
 
     void ClearHurt()
@@ -111,12 +149,11 @@ public class HandFlick : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
         Plane plane = new Plane(-Vector3.forward, Vector3.zero);
-        Vector3 raycastPoint;
         if (plane.Raycast(ray, out float distance))
         {
-            raycastPoint = ray.origin + ray.direction * distance;
+            cursorPos = ray.origin + ray.direction * distance;
 
-            Vector3 dir = raycastPoint - transform.position;
+            Vector3 dir = cursorPos - transform.position;
             dir.z = 0;
             dir.Normalize();
             return dir;

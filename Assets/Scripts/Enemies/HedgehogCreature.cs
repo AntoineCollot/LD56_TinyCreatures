@@ -15,7 +15,7 @@ public class HedgehogCreature : Creature
         if (isFlying)
             return;
 
-
+        SFXManager.PlaySound(GlobalSFX.HegEat);
         Cheese.Instance.DamageCheese(collisionPoint);
 
         Disable();
@@ -29,11 +29,13 @@ public class HedgehogCreature : Creature
         bool shouldDefend = ShouldDefend();
         if(shouldDefend && !isDefending)
         {
+            SFXManager.PlaySound(GlobalSFX.HegDefend);
             anim.SetBool("IsDefending", true);
             isDefending = true;
         }
         else if(isDefending && !shouldDefend)
         {
+            SFXManager.PlaySound(GlobalSFX.HegDefendOff);
             anim.SetBool("IsDefending", false);
             isDefending = false;
         }
@@ -53,5 +55,11 @@ public class HedgehogCreature : Creature
     {
         float distToFlick = Vector3.Distance(HandFlick.Instance.transform.position, transform.position);
         return distToFlick <= defendRadius;
+    }
+
+    public override void Hit(Vector3 dir)
+    {
+        base.Hit(dir);
+        SFXManager.PlaySound(GlobalSFX.HegHit);
     }
 }

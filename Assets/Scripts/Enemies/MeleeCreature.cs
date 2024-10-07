@@ -12,7 +12,7 @@ public class MeleeCreature : Creature
         if (isFlying)
             return;
 
-
+        SFXManager.PlaySound(GlobalSFX.MouseEat);
         Cheese.Instance.DamageCheese(collisionPoint);
 
         Disable();
@@ -27,5 +27,12 @@ public class MeleeCreature : Creature
             body.velocity = Vector3.zero;
         else
             MoveTowardObjective();
+    }
+
+    public override void Hit(Vector3 dir)
+    {
+        base.Hit(dir);
+
+        SFXManager.PlaySound(GlobalSFX.MouseHit);
     }
 }

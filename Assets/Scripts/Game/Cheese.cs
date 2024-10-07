@@ -32,6 +32,7 @@ public class Cheese : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(HitAnim());
         Invoke("UpdateSprite", 0.1f);
+        ScreenShakeSimple.Instance.Shake(1f);
         if (hp <= 0)
         {
             GameManager.Instance.GameOver();

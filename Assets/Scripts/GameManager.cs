@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
             return;
         gameHasStarted = true;
         onGameStart.Invoke();
+
+        SFXManager.PlaySound(GlobalSFX.DefendTheCheese);
     }
 
     public void GameOver()
@@ -45,6 +47,7 @@ public class GameManager : MonoBehaviour
             return;
         gameIsOver = true;
         onGameOver.Invoke();
+        SFXManager.PlaySound(GlobalSFX.GameOver);
     }
 
     public void ClearLevel()

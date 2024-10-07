@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -152,7 +152,7 @@ TextureImporter:
         width: 80
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
         width: 75
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,6 +181,342 @@ TextureImporter:
       bones: []
       spriteID: ee6ef6f42920f3b4fb9c3af4e4990dab
       internalID: 1860842561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 306
+        width: 262
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c048d1009a8137e45b1a464787b65e3b
+      internalID: -431596852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 284
+        width: 69
+        height: 15
+      alignment: 9
+      pivot: {x: 0.093096636, y: 0.3908366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ae8614f351a5e4b9a4f4ff5aec22c6
+      internalID: 1175916492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 248
+        width: 66
+        height: 22
+      alignment: 9
+      pivot: {x: 0.10993738, y: 0.45487836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52100ef3981b13429cddf123a86a1f5
+      internalID: -109177707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 223
+        width: 76
+        height: 25
+      alignment: 9
+      pivot: {x: 0.038735792, y: 0.6056183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ad3d1e48d78cf4a81adc3a977610c2
+      internalID: 1643162078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 192
+        width: 77
+        height: 22
+      alignment: 9
+      pivot: {x: 0.0562273, y: 0.5978026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47936d26e43742f49963a9b3f725a048
+      internalID: 1586448640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 170
+        width: 65
+        height: 18
+      alignment: 9
+      pivot: {x: 0.10907053, y: 0.5620431}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97803abd4356e641b7a269104f26d74
+      internalID: -1198530977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke0
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 341
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f3fb42acc768c43a617bd5d78fb348
+      internalID: 1280249407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke1
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 343
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ba09d82144d14449076ab324dc18c4
+      internalID: 972857571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 277
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e699e24ecf1c14e859f94dbf73a317
+      internalID: -149219403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke3
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 271
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f73a3d2756fd84bae932e71acd8c60
+      internalID: 900251430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explo0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 45
+        width: 125
+        height: 112
+      alignment: 9
+      pivot: {x: 0.55561453, y: 0.44827563}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b21449e1d5cfe14d9942e5a3ae32dcd
+      internalID: 1539514254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explo1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 265
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6d3031245f9304bb9dfe4d49783734
+      internalID: -315815298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tuto
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 410
+        width: 138
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38ed72dee0b79047919f1042d43499d
+      internalID: -1011174140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MusicButton
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 417
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def3d4337bc27984284173535362c6d1
+      internalID: -999145887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 237
+        height: 25
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70f03928e4d113418b422c712576649
+      internalID: 1370419946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelectCircle
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 248
+        width: 94
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848b59d447c6477439f33339bd99122f
+      internalID: -2019049752
       vertices: []
       indices: 
       edges: []
@@ -197,8 +533,24 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Arrow: 539433777
+      Button: -431596852
       Circle: -159500996
+      Explo0: 1539514254
+      Explo1: -315815298
+      Hurt0: 1175916492
+      Hurt1: -109177707
+      Hurt2: 1643162078
+      Hurt3: 1586448640
+      Hurt4: -1198530977
+      Line: 1370419946
+      MusicButton: -999145887
+      SelectCircle: -2019049752
+      Smoke0: 1280249407
+      Smoke1: 972857571
+      Smoke2: -149219403
+      Smoke3: 900251430
       Star: 1860842561
+      Tuto: -1011174140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

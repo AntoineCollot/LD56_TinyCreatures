@@ -52,7 +52,11 @@ public class ScoreSystem : MonoBehaviour
     public void RegisterComboStarter(Creature root)
     {
         if (!comboBy.ContainsKey(root))
+        {
             comboBy.Add(root, 0);
+            SFXManager.PlaySound(GlobalSFX.Hit1);
+            ScreenShakeSimple.Instance.Shake(0.2f);
+        }
     }
 
     public void RegisterCombo(Creature source, Creature hit, Vector3 hitPos)
@@ -60,7 +64,6 @@ public class ScoreSystem : MonoBehaviour
         if (hitBy.ContainsKey(hit))
         {
             Debug.Log("Already has " + hit.ToString());
-            Debug.Break();
         }
         //register the hit chain
         hitBy.Add(hit, source);
@@ -71,6 +74,23 @@ public class ScoreSystem : MonoBehaviour
         {
             AddPointsForCombo(comboSource);
             onComboHit.Invoke(comboSource, comboBy[comboSource], hitPos);
+        }
+
+        ScreenShakeSimple.Instance.Shake(0.3f);
+        switch (comboBy[comboSource])
+        {
+            case 1:
+                SFXManager.PlaySound(GlobalSFX.Hit2);
+                break;
+            case 2:
+                SFXManager.PlaySound(GlobalSFX.Hit3);
+                break;
+            case 3:
+                SFXManager.PlaySound(GlobalSFX.Hit4);
+                break;
+            default:
+                SFXManager.PlaySound(GlobalSFX.Hit4);
+                break;
         }
     }
 

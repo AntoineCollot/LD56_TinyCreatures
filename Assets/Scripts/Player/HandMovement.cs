@@ -20,8 +20,17 @@ public class HandMovement : MonoBehaviour
         flicker = GetComponent<HandFlick>();
     }
 
+
+    private void OnDestroy()
+    {
+        inputMap.Dispose();
+    }
+
     void Update()
     {
+        if (GameManager.Instance.gameIsOver)
+            return;
+
         Vector2 playerInputs = inputMap.Gameplay.Move.ReadValue<Vector2>();
         Vector3 move = playerInputs;
 

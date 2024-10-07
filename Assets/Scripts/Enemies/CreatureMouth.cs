@@ -15,6 +15,9 @@ public class CreatureMouth : Creature
 
     bool isAttacking;
 
+    public float explodeTime = 1;
+    public Explosion explosionPrefab;
+
     protected override void Awake()
     {
         base.Awake();
@@ -41,6 +44,25 @@ public class CreatureMouth : Creature
         StopAllCoroutines();
         isAttacking = false;
         anim.SetBool("IsAttacking", false);
+        SFXManager.PlaySound(GlobalSFX.MouthHit);
+    }
+
+    protected override void FlyDelayed()
+    {
+        base.FlyDelayed();
+
+        Invoke("Explode", explodeTime);
+    }
+
+    void Explode()
+    {
+        if(isFlying && gameObject.activeSelf)
+        {
+            Explosion explo = Instantiate(explosionPrefab, null);
+            explo.transform.position = transform.position;
+            explo.Init(this);
+            Disable();
+        }
     }
 
     protected override void CollideWithObjective(Vector3 collisionPoint)
@@ -81,13 +103,15 @@ public class CreatureMouth : Creature
     const float HEIGHT = 1.28f;
     IEnumerator AttackLoop()
     {
-        while(true)
+        while(GameManager.Instance.GameIsPlaying)
         {
+            SFXManager.PlaySound(GlobalSFX.MouthPrepare);
             yield return new WaitForSeconds(2);
 
             attackFX.gameObject.SetActive(true);
             attackFX.transform.LookAt(Vector3.zero, -Vector3.forward);
             attackFXSprite.size = new Vector2(Vector3.Distance(attackFX.transform.position, Vector3.zero) / attackFXSprite.transform.localScale.x, HEIGHT);
+            SFXManager.PlaySound(GlobalSFX.MouthShout);
             yield return new WaitForSeconds(0.15f);
 
             Vector3 dir = attackFX.transform.position;

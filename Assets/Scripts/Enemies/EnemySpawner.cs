@@ -99,7 +99,7 @@ public class EnemySpawner : MonoBehaviour
         pools[creature.type].Enqueue(creature);
     }
 
-    const float VIEWPORT_MARGINS = 0.03f;
+    const float VIEWPORT_MARGINS = 0.05f;
     Vector3 GetRandomPositionAroundScreen()
     {
         Vector3 posOnViewportEdges = new Vector3();

@@ -5,7 +5,7 @@ using UnityEngine;
 public static class GameDifficulty
 {
     const float MIN_MOVE_MULTIPLIER = 0.3f;
-    const float TIME_TO_MAX_DIFFICULTY = 70;
+    const float TIME_TO_MAX_DIFFICULTY = 120;
     public static float MovementMultiplier
     {
         get

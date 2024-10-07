@@ -311,6 +311,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cheese_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bd847f26ea97d4681686c892c3e078
+      internalID: 1686664768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -330,6 +351,7 @@ TextureImporter:
       Cheese_1: -370005473
       Cheese_2: -1311164484
       Cheese_3: 1209261052
+      Cheese_4: 1686664768
       Cheese_5: -1376727770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
